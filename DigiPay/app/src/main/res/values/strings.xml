@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DigiPay</string>
+    <string name="id_tele">Id or Mobile Money Number</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dash_board">Dashboard</string>
+    <string name="history">History</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="spinner">
+        <item>Rev-Coms TMA</item>
+        <item>Rev-Coms ZoomLion</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

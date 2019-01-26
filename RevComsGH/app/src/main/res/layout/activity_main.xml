@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fcfcfc"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.digimasters.rev_comsgh.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="First Name:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/f_name"
+                    android:hint="Customer First Name..."
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textCapWords"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Last Name" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer Last Name..."
+                    android:textSize="17sp"
+                    android:id="@+id/l_name"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textCapWords"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="National ID" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:id="@+id/id_type"
+                    android:entries="@array/id_type"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/n_id"
+                    android:hint="ID Number..."
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textCapWords"
+                   />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Date Of Birth" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dob"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:hint="Click Button Below"
+                    android:longClickable="false"
+                    android:layout_marginBottom="6dp"
+                    android:inputType="textCapWords"
+                    android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pick_date"
+                    android:textSize="16sp"
+                    android:text="Pick Date"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#fff"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Location Cordinates" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:hint="Click Button Below"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="textCapWords"
+                    android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/getlocation_btn"
+                    android:textSize="16sp"
+                    android:text="Get Current location"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#fff"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Address" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address"
+                    android:textSize="17sp"
+                    android:hint="Customer Home Address..."
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textCapWords"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Region" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/region"
+                    android:entries="@array/regions"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="District/Metro" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/district"
+                    android:entries="@array/A_district"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Suburb" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suburb"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/adansi_north_suburbs"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Profile Type" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:id="@+id/profile_type"
+                    android:entries="@array/profile_type"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/apt_store_no"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="17sp"
+                    android:hint="Apt/Store Number..."
+                    android:inputType="textCapWords"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Bin Number" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="number"
+                    android:id="@+id/bin_no"
+                   />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Telephone" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Mmno"
+                    android:hint="Mobile Money Number ..."
+                    android:textSize="17sp"
+                    android:layout_marginBottom="5dp"
+                    android:inputType="number"
+                   />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tele2"
+                    android:textSize="17sp"
+                    android:hint="Other Telephone Number..."
+                    android:layout_marginBottom="10dp"
+                    android:inputType="number"
+                     />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Email" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="Customer Email..."
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/email"
+                     />
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Preferred Pick up Day" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pickup_day"
+                    android:entries="@array/pf_day"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Preferred Pick up Time" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/pf_time"
+                    android:id="@+id/pickup_time"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Comments" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="17sp"
+                    android:lines="8"
+                    android:minLines="4"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:gravity="top|left"
+                    android:id="@+id/comment"
+                    android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:id="@+id/next"
+            android:layout_gravity="right"
+            android:text="next" />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
